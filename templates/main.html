@@ -1,53 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<style>
-   body {
-       margin: 0;
-       padding: 0;
-       background-color: beige;
-   }
-   
-   .card-container {
-       width: 300px;
-       height: 300px;
-       background: blanchedalmond;
-       border-radius: 6px;
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       box-shadow: 0 1px 10px 1px gray;
-   }
-
-   .top {
-       background-color: olive;
-       color: white;
-       text-align: center;
-       height: 125px;
-   }
-
-   .bottom {
-       background-color: blanchedalmond;
-       margin: 0;
-       padding: 5px;
-       height: 175px;
-   }
-
-   p {
-       height: 30px;
-   }
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Team</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/390fb0bddd.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+        }
+        
+        .card-container {
+            width: 300px;
+            height: 300px;
+            background: blanchedalmond;
+            border-radius: 6px;
+            box-shadow: 0 1px 10px 1px gray;
+        }
+     
+        .top {
+            background-color: olive;
+            color: white;
+            text-align: center;
+            height: 125px;
+        }
+     
+        .bottom {
+            background-color: blanchedalmond;
+            margin: 0;
+            padding: 5px;
+            height: 175px;
+        }
+     </style>
 </head>
+
 <body>
-   <div class="container team-area">
-       {{ team }}
-   </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="team-area col-12 justify-content-center">
+                {{ team }}
+            </div>
+        </div>
+    </div>
 </body>
 </html>
