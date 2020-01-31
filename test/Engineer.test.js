@@ -1,19 +1,19 @@
 const Engineer = require("../lib/Engineer");
 
-test("Can set GitHUb account via constructor", function () {
-  const testValue = "GitHubUser";
-  const e = new Engineer("Foo", 1, "test@test.com", testValue);
+test("Set GitHUb username with constructor", function () {
+  const testValue = "User";
+  const e = new Engineer("Jay", 1, "test@test.com", testValue);
   expect(e.github).toBe(testValue);
 });
 
-test("getRole() should return \"Engineer\"", function () {
+test("getRole() returns \"Engineer\"", function () {
   const testValue = "Engineer";
-  const e = new Engineer("Foo", 1, "test@test.com", "GitHubUser");
+  const e = new Engineer("Jay", 1, "test@test.com", "User");
   expect(e.getRole()).toBe(testValue);
 });
 
-test("Can get GitHub username via getGithub()", function () {
+test("Get GitHub username with getGithub()", function () {
   const testValue = "GitHubUser";
-  const e = new Engineer("Foo", 1, "test@test.com", testValue);
+  const e = new Engineer("Jay", 1, "test@test.com", testValue);
   expect(e.getGithub()).toBe(testValue);
 });
